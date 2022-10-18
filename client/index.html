@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <header class="header">
+        <div class="container">
+            <div class="cart">
+                <div class="cart__svg">
+                    <img src="./images/cart.png" alt="">
+                </div>
+                <p class="cart__text">1</p>
+            </div>
+        </div>
+        <div class="buy__modal-bg">
+            <div class="buy__modal">
+                <div class="buy__modal-top">
+                    <button class="buy__modal-close">X</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search">
+            <div class="container">
+                <form action="#" class="search__form">
+                    <input type="text" placeholder="Звідки" class="search__from">
+                    <input type="text" placeholder="Куди" class="search__to">
+                    <input type="date" class="search__date">
+                    <button type="submit" class="search__btn">Search</button>
+                </form>
+            </div>
+        </section>
+        <div class="container">
+            <section class="tikets">
+
+            </section>
+        </div>
+    </main>
+    <script src="./main.js"></script>
 </body>
-<script src="./main.js"></script>
+
 </html>
