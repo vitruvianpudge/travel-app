@@ -153,8 +153,13 @@ img {
     margin-top: 20px;
     width: 700px;
     border: 1px solid #000;
+    max-width: 100%;
+}
+
+.tiket__block {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .tiket__info-left {
@@ -185,6 +190,10 @@ img {
 }
 
 .tiket__price {}
+
+.ticket__img {
+    transition: all 0.3s ease 1s;
+}
 
 .tiket__date {}
 
