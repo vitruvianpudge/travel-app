@@ -92,6 +92,7 @@ img {
     width: 100%;
     transform: translateX(100%);
     transition: 0.5s;
+    z-index: 2;
 }
 
 .buy__modal {
@@ -149,30 +150,28 @@ img {
 }
 
 /* tikets */
-.tiket {
-    margin-top: 20px;
-    width: 700px;
+.ticket {
     border: 1px solid #000;
-    max-width: 100%;
+    margin-top: 20px;
+    max-width: 800px;
 }
 
-.tiket__block {
+.ticket__inner {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
 }
 
-.tiket__info-left {
+.ticket__info-left {
     margin-left: 15px;
     max-width: 200px;
     width: 100%;
 }
 
-.tiket__way {
+.ticket__way {
     display: flex;
 }
 
-.tiket__transport {}
+.ticket__transport {}
 
 .ticket__arrow {
     font-size: 25px;
@@ -180,7 +179,7 @@ img {
     cursor: pointer;
 }
 
-.tiket__info-right {
+.ticket__info-right {
     max-width: 200px;
     width: 100%;
     display: flex;
@@ -189,16 +188,83 @@ img {
     margin-right: 15px;
 }
 
-.tiket__price {}
+.ticket__price {}
 
 .ticket__img {
-    transition: all 0.3s ease 1s;
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.2s;
 }
 
-.tiket__date {}
+.place__nummber {
+    color: #2C6A8C;
+    border: 2px solid #2C6A8C;
+}
 
+.place__nummber-normal {
+    font-size: 25px;
+    width: 33px;
+    height: 33px;
+    margin-right: 11.3px;
+    margin-bottom: 4px;
+}
+
+.place__nummber-small {
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.plase__train {
+    position: absolute;
+    top: 8.8px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+
+.plase__row {
+    display: flex;
+}
+
+.place__column {
+    margin-bottom: 56px;
+}
+
+.ticket__date {}
+
+.plase__plane {
+    position: absolute;
+    top: 8.8px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.plase__plane .place__column {
+    margin-bottom: 20px;
+}
 
 /*  */
 .delete {
+    display: none;
+}
+
+.active {
+    margin: 15px 10px;
+    max-height: 700px;
+}
+
+.place__active {
+    background: rgb(33, 244, 160);
+}
+.show{
+    display: block;
+}
+.hide{
     display: none;
 }
